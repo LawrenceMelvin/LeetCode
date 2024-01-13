@@ -15,13 +15,27 @@ public class add_twonumber {
         for(int i=0;i<n;i++){
             linkedList2.add(sc.nextInt());
         }
-        sc.close();
-        int i = linkedList2.size();
+        LinkedList<Integer> sumll = new LinkedList<>();
+        int i = linkedList2.size()-1;
         int carry = 0;
-        while (i>0) {
-            int sum = carry;
-            sum = linkedList1.get(i) + linkedList2.get(i);
+        int sum = 0;
+        while (i>=0) {
+            //int sum = carry;
+            //System.out.print(linkedList1.get(i)+" ");
+            if(carry == 1){
+                sum = linkedList1.get(i) + linkedList2.get(i)+1;
+                carry = 0;
+            }else{
+                sum = linkedList1.get(i) + linkedList2.get(i);
+            }
+            if(sum >= 10){
+                carry = 1;
+                sum = sum%10;
+            }
+            sumll.add(sum);
+            i--;
         }
+        System.out.println(sumll);
     }
 
     /*

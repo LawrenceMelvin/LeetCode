@@ -40,5 +40,6 @@ public class add_binary {
             result.append("1");
         }
         System.out.println(result.reverse().toString());
+        sc.close();
     }
 }

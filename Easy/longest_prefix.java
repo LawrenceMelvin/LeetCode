@@ -56,5 +56,6 @@ public class longest_prefix {
         }
         //System.out.println("Final longest prefix length = "+str_lenght);
         System.err.println(output);
+        sc.close();
     }
 }

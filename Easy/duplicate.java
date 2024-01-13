@@ -37,5 +37,6 @@ public class duplicate {
         for(int k=0;k<nums.length;k++){
             System.out.print(nums[k]+",");
         }
+        sc.close();
     }
 }

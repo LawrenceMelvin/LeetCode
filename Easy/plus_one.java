@@ -38,5 +38,6 @@ public class plus_one {
         for(int j=0;j<digits.length;j++){
             System.out.print(digits[j]+" ");
         }
+        sc.close();
     }
 }
