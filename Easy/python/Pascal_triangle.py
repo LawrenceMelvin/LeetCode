@@ -16,6 +16,3 @@ class Solution:
     def main(self):
         numRows = int(input("Enter the number = "))
         self.generate(numRows)
-
-if __name__ == "__main__":
-    print(main())
