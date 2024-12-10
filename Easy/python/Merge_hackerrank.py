@@ -1,16 +1,14 @@
 def merge_the_tools(string,k):
-    t = []
-    for i in range(0,len(string),k):
-        #print(string[i])
-        t.append(string[i:i+k])
-        s = string[i:i+k]
-        # for r in range(len(s)):
-        #     if s[r] in [h for h in s]:
-        [h for h in s]
+    result = []
+    p=''
+    for i in range(len(string)):
+        if string[i] not in p:
+            p+=string[i]
+        if (i+1)%k==0:
+            result.append(p)
+            p=''
+    print(result)
 
-
-    for j in t:
-        print(j)
         
         
 
